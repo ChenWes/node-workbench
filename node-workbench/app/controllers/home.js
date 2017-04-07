@@ -8,11 +8,13 @@ module.exports = function (app) {
 };
 
 router.get('/', function (req, res, next) {
-  Article.find(function (err, articles) {
-    if (err) return next(err);
-    res.render('index', {
-      title: 'Generator-Express MVC',
-      articles: articles
-    });
+  res.render('index', {
+    title: 'Nodejs Workbench'
+  });
+});
+
+router.get('/main', function (req, res, next) {
+  res.render('main', {
+    title: 'Nodejs Workbench'
   });
 });

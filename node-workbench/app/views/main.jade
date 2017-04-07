@@ -1,0 +1,71 @@
+extends layout-comm
+
+block content
+  .row
+    .col-sm-12
+      .wrapper.wrapper-content
+        .row.animated.fadeInRight
+          .col-sm-12
+            .ibox.float-e-margins
+              .text-center.float-e-margins.p-md
+                span 查看：
+                a#lightVersion.btn.btn-sm.btn-primary(href="#") 今天
+                a#darkVersion.btn.btn-sm.btn-success(href="#") 本周
+                a#leftVersion.btn.btn-sm.btn-default(href="#") 本月
+              #ibox-content
+                #vertical-timeline.vertical-container.light-timeline
+                  .vertical-timeline-block
+                    .vertical-timeline-icon.navy-bg
+                      i.fa.fa-briefcase
+                    .vertical-timeline-content
+                      h2 会议
+                      p
+                        | 上一年的销售业绩发布会。总结产品营销和销售趋势及销售的现状。
+                      a.btn.btn-sm.btn-primary(href="#")  更多信息
+                      span.vertical-date
+                        | 今天 
+                        br
+                        small 2月3日
+                  .vertical-timeline-block
+                    .vertical-timeline-icon.blue-bg
+                      i.fa.fa-file-text
+                    .vertical-timeline-content
+                      h2 给张三发送文档
+                      p 发送上年度《销售业绩报告》
+                      a.btn.btn-sm.btn-success(href="#")  下载文档 
+                      span.vertical-date
+                        | 今天 
+                        br
+                        small 2月3日
+                  .vertical-timeline-block
+                    .vertical-timeline-icon.lazur-bg
+                      i.fa.fa-coffee
+                    .vertical-timeline-content
+                      h2 喝咖啡休息
+                      p 喝咖啡啦，啦啦啦~~
+                      a.btn.btn-sm.btn-info(href="#") 更多
+                      span.vertical-date
+                        | 昨天 
+                        br
+                        small 2月2日
+                  .vertical-timeline-block
+                    .vertical-timeline-icon.yellow-bg
+                      i.fa.fa-phone
+                    .vertical-timeline-content
+                      h2 给李四打电话
+                      p 给李四打电话分配本月工作任务
+                      span.vertical-date
+                        | 昨天 
+                        br
+                        small 2月2日
+                  .vertical-timeline-block
+                    .vertical-timeline-icon.lazur-bg
+                      i.fa.fa-user-md
+                    .vertical-timeline-content
+                      h2 公司年会
+                      p 发年终奖啦，啦啦啦~~
+                      span.vertical-date
+                        | 前天 
+                        br
+                        small 2月1日
+

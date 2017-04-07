@@ -1,6 +1,7 @@
 var path = require('path'),
-    rootPath = path.normalize(__dirname + '/..'),
-    env = process.env.NODE_ENV || 'development';
+  rootPath = path.normalize(__dirname + '/..'),
+  env = process.env.NODE_ENV || 'development',
+  projectPort = 3002;
 
 var config = {
   development: {
@@ -8,8 +9,8 @@ var config = {
     app: {
       name: 'node-workbench'
     },
-    port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/node-workbench-development'
+    port: process.env.PORT || projectPort,
+    db: 'mongodb://localhost/node-workbench-dev'
   },
 
   test: {
@@ -17,8 +18,8 @@ var config = {
     app: {
       name: 'node-workbench'
     },
-    port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/node-workbench-test'
+    port: process.env.PORT || projectPort,
+    db: 'mongodb://localhost/node-workbench-sit'
   },
 
   production: {
@@ -26,8 +27,8 @@ var config = {
     app: {
       name: 'node-workbench'
     },
-    port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/node-workbench-production'
+    port: process.env.PORT || projectPort,
+    db: 'mongodb://localhost/node-workbench'
   }
 };
 
