@@ -1,0 +1,615 @@
+extends layout-comm
+
+block content
+ .wrapper.wrapper-content.animated.fadeInRight
+  .row
+    .col-sm-7
+      .ibox.float-e-margins
+        .ibox-title
+          h5
+            | 基本表单 
+            small 简单登录表单示例
+          |                         
+          .ibox-tools
+            a.collapse-link
+              i.fa.fa-chevron-up
+            |                             
+            a.dropdown-toggle(data-toggle="dropdown", href="form_basic.html#")
+              i.fa.fa-wrench
+            |                             
+            ul.dropdown-menu.dropdown-user
+              li
+                a(href="form_basic.html#") 选项1
+              |                                 
+              li
+                a(href="form_basic.html#") 选项2
+            |                             
+            a.close-link
+              i.fa.fa-times
+        |                     
+        .ibox-content
+          .row
+            .col-sm-6.b-r
+              h3.m-t-none.m-b 登录
+              |                                 
+              p 欢迎登录本站(⊙o⊙)
+              |                                 
+              form(role="form")
+                .form-group
+                  label 用户名
+                  |                                         
+                  input.form-control(type="email", placeholder="请输入您注册的E-mail")
+                |                                     
+                .form-group
+                  label 密码
+                  |                                         
+                  input.form-control(type="password", placeholder="请输入密码")
+                |                                     
+                div
+                  button.btn.btn-sm.btn-primary.pull-right.m-t-n-xs(type="submit")
+                    strong 登 录
+                  |                                         
+                  label
+                    input.i-checks(type="checkbox")
+                    | 自动登录
+            |                             
+            .col-sm-6
+              h4 还不是会员？
+              |                                 
+              p 您可以注册一个新账户
+              |                                 
+              p.text-center
+                a(href="form_basic.html")
+                  i.fa.fa-sign-in.big-icon
+    |             
+    .col-sm-5
+      .ibox.float-e-margins
+        .ibox-title
+          h5 横向表单
+          |                         
+          .ibox-tools
+            a.collapse-link
+              i.fa.fa-chevron-up
+            |                             
+            a.dropdown-toggle(data-toggle="dropdown", href="form_basic.html#")
+              i.fa.fa-wrench
+            |                             
+            ul.dropdown-menu.dropdown-user
+              li
+                a(href="form_basic.html#") 选项1
+              |                                 
+              li
+                a(href="form_basic.html#") 选项2
+            |                             
+            a.close-link
+              i.fa.fa-times
+        |                     
+        .ibox-content
+          form.form-horizontal
+            p 欢迎登录本站(⊙o⊙)
+            |                             
+            .form-group
+              label.col-sm-3.control-label 用户名：
+              |                                 
+              .col-sm-8
+                input.form-control(type="email", placeholder="用户名")
+                |  
+                span.help-block.m-b-none 请输入您注册时所填的E-mail
+            |                             
+            .form-group
+              label.col-sm-3.control-label 密码：
+              |                                 
+              .col-sm-8
+                input.form-control(type="password", placeholder="密码")
+            |                             
+            .form-group
+              .col-sm-offset-3.col-sm-8
+                button.btn.btn-sm.btn-white(type="submit") 登 录
+  |         
+  .row
+    .col-sm-8
+      .ibox.float-e-margins
+        .ibox-title
+          h5 内联表单
+          |                         
+          .ibox-tools
+            a.collapse-link
+              i.fa.fa-chevron-up
+            |                             
+            a.dropdown-toggle(data-toggle="dropdown", href="form_basic.html#")
+              i.fa.fa-wrench
+            |                             
+            ul.dropdown-menu.dropdown-user
+              li
+                a(href="form_basic.html#") 选项1
+              |                                 
+              li
+                a(href="form_basic.html#") 选项2
+            |                             
+            a.close-link
+              i.fa.fa-times
+        |                     
+        .ibox-content
+          form.form-inline(role="form")
+            .form-group
+              label.sr-only(for="exampleInputEmail2") 用户名
+              |                                 
+              input#exampleInputEmail2.form-control(type="email", placeholder="请输入用户名")
+            |                             
+            .form-group
+              label.sr-only(for="exampleInputPassword2") 密码
+              |                                 
+              input#exampleInputPassword2.form-control(type="password", placeholder="请输入密码")
+            |                             
+            .checkbox.m-l.m-r-xs
+              label.i-checks
+                input(type="checkbox")
+                i
+                |  自动登录
+            |                             
+            button.btn.btn-white(type="submit") 登录
+    |             
+    .col-sm-4
+      .ibox.float-e-margins
+        .ibox-title
+          h5
+            | 弹出表单 
+            small 弹出框登录示例
+          |                         
+          .ibox-tools
+            a.collapse-link
+              i.fa.fa-chevron-up
+            |                             
+            a.dropdown-toggle(data-toggle="dropdown", href="form_basic.html#")
+              i.fa.fa-wrench
+            |                             
+            ul.dropdown-menu.dropdown-user
+              li
+                a(href="form_basic.html#") 选项1
+              |                                 
+              li
+                a(href="form_basic.html#") 选项2
+            |                             
+            a.close-link
+              i.fa.fa-times
+        |                     
+        .ibox-content
+          .text-center
+            a.btn.btn-primary(data-toggle="modal", href="/login") 打开登录窗口
+  |         
+  .row
+    .col-sm-12
+      .ibox.float-e-margins
+        .ibox-title
+          h5
+            | 所有表单元素 
+            small 包括自定义样式的复选和单选按钮
+          |                         
+          .ibox-tools
+            a.collapse-link
+              i.fa.fa-chevron-up
+            |                             
+            a.dropdown-toggle(data-toggle="dropdown", href="form_basic.html#")
+              i.fa.fa-wrench
+            |                             
+            ul.dropdown-menu.dropdown-user
+              li
+                a(href="form_basic.html#") 选项1
+              |                                 
+              li
+                a(href="form_basic.html#") 选项2
+            |                             
+            a.close-link
+              i.fa.fa-times
+        |                     
+        .ibox-content
+          form.form-horizontal(method="get")
+            .form-group
+              label.col-sm-2.control-label 普通
+              |                                 
+              .col-sm-10
+                input.form-control(type="text")
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 带说明信息
+              |                                 
+              .col-sm-10
+                input.form-control(type="text")
+                |  
+                span.help-block.m-b-none 帮助文本，可能会超过一行，以块级元素显示
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 密码
+              |                                 
+              .col-sm-10
+                input.form-control(type="password", name="password")
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 提示
+              |                                 
+              .col-sm-10
+                input.form-control(type="text", placeholder="提示信息")
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 禁用
+              |                                 
+              .col-sm-10
+                input.form-control(type="text", disabled="", placeholder="已被禁用")
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 静态控制
+              |                                 
+              .col-sm-10
+                p.form-control-static i@zi-han.net
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label
+                | 复选框&单选框
+                br
+                |                                     
+                small.text-navy 普通Bootstrap元素
+              |                                 
+              .col-sm-10
+                .checkbox
+                  label
+                    input(type="checkbox", value="")
+                    | 选项1
+                |                                     
+                .radio
+                  label
+                    input#optionsRadios1(type="radio", checked="", value="option1", name="optionsRadios")
+                    | 选项1
+                |                                     
+                .radio
+                  label
+                    input#optionsRadios2(type="radio", value="option2", name="optionsRadios")
+                    | 选项2
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 内联复选框
+              |                                 
+              .col-sm-10
+                label.checkbox-inline
+                  input#inlineCheckbox1(type="checkbox", value="option1")
+                  | a
+                |                                     
+                label.checkbox-inline
+                  input#inlineCheckbox2(type="checkbox", value="option2")
+                  | b
+                |                                     
+                label.checkbox-inline
+                  input#inlineCheckbox3(type="checkbox", value="option3")
+                  | c
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label
+                | 复选框&单选框
+                br
+                small.text-navy 自定义样式
+              |                                 
+              .col-sm-10
+                .checkbox.i-checks
+                  label
+                    input(type="checkbox", value="")
+                    |  
+                    i
+                    |  选项1
+                |                                     
+                .checkbox.i-checks
+                  label
+                    input(type="checkbox", value="", checked="")
+                    |  
+                    i
+                    |  选项2（选中）
+                |                                     
+                .checkbox.i-checks
+                  label
+                    input(type="checkbox", value="", disabled="", checked="")
+                    |  
+                    i
+                    |  选项3（选中并禁用）
+                |                                     
+                .checkbox.i-checks
+                  label
+                    input(type="checkbox", value="", disabled="")
+                    |  
+                    i
+                    |  选项4（禁用）
+                |                                     
+                .radio.i-checks
+                  label
+                    input(type="radio", value="option1", name="a")
+                    |  
+                    i
+                    |  选项1
+                |                                     
+                .radio.i-checks
+                  label
+                    input(type="radio", checked="", value="option2", name="a")
+                    |  
+                    i
+                    |  选项2（选中）
+                |                                     
+                .radio.i-checks
+                  label
+                    input(type="radio", disabled="", checked="", value="option2")
+                    |  
+                    i
+                    |  选项3（选中并禁用）
+                |                                     
+                .radio.i-checks
+                  label
+                    input(type="radio", disabled="", name="a")
+                    |  
+                    i
+                    |  选项4（禁用）
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 内联复选框
+              |                                 
+              .col-sm-10
+                label.checkbox-inline.i-checks
+                  input(type="checkbox", value="option1")
+                  | a
+                |                                     
+                label.checkbox-inline.i-checks
+                  input(type="checkbox", value="option2")
+                  | b
+                |                                     
+                label.checkbox-inline.i-checks
+                  input(type="checkbox", value="option3")
+                  | c
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label Select
+              |                                 
+              .col-sm-10
+                select.form-control.m-b(name="account")
+                  option 选项 1
+                  |                                         
+                  option 选项 2
+                  |                                         
+                  option 选项 3
+                  |                                         
+                  option 选项 4
+                |                                     
+                .col-sm-4.m-l-n
+                  select.form-control(multiple="")
+                    option 选项 1
+                    |                                             
+                    option 选项 2
+                    |                                             
+                    option 选项 3
+                    |                                             
+                    option 选项 4
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group.has-success
+              label.col-sm-2.control-label 验证通过
+              |                                 
+              .col-sm-10
+                input.form-control(type="text")
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group.has-warning
+              label.col-sm-2.control-label 未填写
+              |                                 
+              .col-sm-10
+                input.form-control(type="text")
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group.has-error
+              label.col-sm-2.control-label 验证未通过
+              |                                 
+              .col-sm-10
+                input.form-control(type="text")
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 自定义尺寸
+              |                                 
+              .col-sm-10
+                input.form-control.input-lg.m-b(type="text", placeholder=".input-lg")
+                |                                     
+                input.form-control.m-b(type="text", placeholder="Default input")
+                |                                     
+                input.form-control.input-sm(type="text", placeholder=".input-sm")
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 列尺寸
+              |                                 
+              .col-sm-10
+                .row
+                  .col-md-2
+                    input.form-control(type="text", placeholder=".col-md-2")
+                  |                                         
+                  .col-md-3
+                    input.form-control(type="text", placeholder=".col-md-3")
+                  |                                         
+                  .col-md-4
+                    input.form-control(type="text", placeholder=".col-md-4")
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 文本框组
+              |                                 
+              .col-sm-10
+                .input-group.m-b
+                  span.input-group-addon @
+                  |                                         
+                  input.form-control(type="text", placeholder="用户名")
+                |                                     
+                .input-group.m-b
+                  input.form-control(type="text")
+                  |  
+                  span.input-group-addon .00
+                |                                     
+                .input-group.m-b
+                  span.input-group-addon ¥
+                  |                                         
+                  input.form-control(type="text")
+                  |  
+                  span.input-group-addon .00
+                |                                     
+                .input-group.m-b
+                  span.input-group-addon
+                    input(type="checkbox")
+                  |                                         
+                  input.form-control(type="text")
+                |                                     
+                .input-group
+                  span.input-group-addon
+                    input(type="radio")
+                  |                                         
+                  input.form-control(type="text")
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 按钮插件
+              |                                 
+              .col-sm-10
+                .input-group.m-b
+                  span.input-group-btn
+                    button.btn.btn-primary(type="button") 搜
+                  |                                         
+                  input.form-control(type="text")
+                |                                     
+                .input-group
+                  input.form-control(type="text")
+                  |  
+                  span.input-group-btn
+                    button.btn.btn-primary(type="button")
+                      | 搜索
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 带下拉框
+              |                                 
+              .col-sm-10
+                .input-group.m-b
+                  .input-group-btn
+                    button.btn.btn-white.dropdown-toggle(data-toggle="dropdown", type="button")
+                      | 操作 
+                      span.caret
+                    |                                             
+                    ul.dropdown-menu
+                      li
+                        a(href="form_basic.html#") 选项1
+                      |                                                 
+                      li
+                        a(href="form_basic.html#") 选项2
+                      |                                                 
+                      li
+                        a(href="form_basic.html#") 选项3
+                      |                                                 
+                      li.divider
+                      |                                                 
+                      li
+                        a(href="form_basic.html#") 选项4
+                  |                                         
+                  input.form-control(type="text")
+                |                                     
+                .input-group
+                  input.form-control(type="text")
+                  |                                         
+                  .input-group-btn
+                    button.btn.btn-white.dropdown-toggle(data-toggle="dropdown", type="button")
+                      | 操作 
+                      span.caret
+                    |                                             
+                    ul.dropdown-menu.pull-right
+                      li
+                        a(href="form_basic.html#") 选项1
+                      |                                                 
+                      li
+                        a(href="form_basic.html#") 选项2
+                      |                                                 
+                      li
+                        a(href="form_basic.html#") 选项3
+                      |                                                 
+                      li.divider
+                      |                                                 
+                      li
+                        a(href="form_basic.html#") 选项4
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              label.col-sm-2.control-label 分段
+              |                                 
+              .col-sm-10
+                .input-group.m-b
+                  .input-group-btn
+                    button.btn.btn-white(tabindex="-1", type="button") 操作
+                    |                                             
+                    button.btn.btn-white.dropdown-toggle(data-toggle="dropdown", type="button")
+                      span.caret
+                    |                                             
+                    ul.dropdown-menu
+                      li
+                        a(href="form_basic.html#") 选项1
+                      |                                                 
+                      li
+                        a(href="form_basic.html#") 选项2
+                      |                                                 
+                      li
+                        a(href="form_basic.html#") 选项3
+                      |                                                 
+                      li.divider
+                      |                                                 
+                      li
+                        a(href="form_basic.html#") 选项4
+                  |                                         
+                  input.form-control(type="text")
+                |                                     
+                .input-group
+                  input.form-control(type="text")
+                  |                                         
+                  .input-group-btn
+                    button.btn.btn-white(tabindex="-1", type="button") 操作
+                    |                                             
+                    button.btn.btn-white.dropdown-toggle(data-toggle="dropdown", type="button")
+                      span.caret
+                    |                                             
+                    ul.dropdown-menu.pull-right
+                      | 分段
+            |                             
+            .hr-line-dashed
+            |                             
+            .form-group
+              .col-sm-4.col-sm-offset-2
+                button.btn.btn-primary(type="submit") 保存内容
+                |                                     
+                button.btn.btn-white(type="submit") 取消
+
+
+

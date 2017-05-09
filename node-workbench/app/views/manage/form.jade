@@ -1,0 +1,125 @@
+extends layout-comm
+
+block content
+  .wrapper.wrapper-content
+    .row
+      .col-sm-12
+        .ibox.float-e-margins
+          .ibox-title
+            h5 富头像上传编辑器
+            |                         
+            .ibox-tools
+              a.collapse-link
+                i.fa.fa-chevron-up
+              |                             
+              a.dropdown-toggle(data-toggle="dropdown", href="form_editors.html#")
+                i.fa.fa-wrench
+              |                             
+              ul.dropdown-menu.dropdown-user
+                li
+                  a(href="form_editors.html#") 选项1
+                |                                 
+                li
+                  a(href="form_editors.html#") 选项2
+              |                             
+              a.close-link
+                i.fa.fa-times
+          |                     
+          .ibox-content
+            ul#avatar-tab.nav.nav-tabs
+              li#upload.active
+                a(href="javascript:;") 本地上传
+              |                             
+              li#webcam
+                a(href="javascript:;") 视频拍照
+              |                             
+              li#albums
+                a(href="javascript:;") 相册选取
+            |                         
+            .m-t.m-b
+              #flash1
+                p#swf1
+                  | 本组件需要安装Flash Player后才可使用，请从
+                  a(href="http://www.adobe.com/go/getflashplayer") 这里
+                  | 下载安装。
+              |                             
+              #editorPanelButtons(style="display:none")
+                p.m-t
+                  label.checkbox-inline
+                    input#src_upload(type="checkbox")
+                    | 是否上传原图片？
+                |                                 
+                p
+                  a.btn.btn-w-m.btn-primary.button_upload(href="javascript:;")
+                    i.fa.fa-upload
+                    |  上传
+                  |                                     
+                  a.btn.btn-w-m.btn-white.button_cancel(href="javascript:;") 取消
+              |                             
+              p#webcamPanelButton(style="display:none")
+                a.btn.btn-w-m.btn-info.button_shutter(href="javascript:;")
+                  i.fa.fa-camera
+                  |  拍照
+              |                             
+              #userAlbums(style="display:none")
+                a.fancybox(href="img/a1.jpg", title="选取该照片")
+                  img(src="img/a1.jpg", alt="示例图片1")
+                |                                 
+                a.fancybox(href="img/a2.jpg", title="选取该照片")
+                  img(src="img/a2.jpg", alt="示例图片2")
+                |                                 
+                a.fancybox(href="img/a3.jpg", title="选取该照片")
+                  img(src="img/a3.jpg", alt="示例图片2")
+                |                                 
+                a.fancybox(href="img/a4.jpg", title="选取该照片")
+                  img(src="img/a4.jpg", alt="示例图片2")
+                |                                 
+                a.fancybox(href="img/a5.jpg", title="选取该照片")
+                  img(src="img/a5.jpg", alt="示例图片2")
+                |                                 
+                a.fancybox(href="img/a6.jpg", title="选取该照片")
+                  img(src="img/a6.jpg", alt="示例图片2")
+                |                                 
+                a.fancybox(href="img/a7.jpg", title="选取该照片")
+                  img(src="img/a7.jpg", alt="示例图片2")
+                |                                 
+                a.fancybox(href="img/a8.jpg", title="选取该照片")
+                  img(src="img/a8.jpg", alt="示例图片2")
+                |                                 
+                a.fancybox(href="img/a9.jpg", title="选取该照片")
+                  img(src="img/a9.jpg", alt="示例图片2")
+                | >
+            |                         
+            .alert.alert-warning.alert-dismissable.m-t
+              button.close(aria-hidden="true", data-dismiss="alert", type="button") ×
+              |                             - 本示例不提供图片上传功能，如果需要测试，请访问官网：
+              a(href="http://www.fullavatareditor.com/demo.html", target="_blank") http://www.fullavatareditor.com/demo.html
+              |                             
+              br
+              | - 测试 
+              b 视频拍照
+              |  功能时，请注意允许
+              code flash
+              | 和
+              code 浏览器
+              | 使用摄像头，否则可能会无法拍照。
+    |         
+    .row
+      .col-sm-12
+        .ibox.float-e-margins
+          .ibox-content
+            h2
+              | 富头像上传编辑器简介
+            |                         
+            p
+              | 富头像上传编辑器是一款支持本地上传、预览、视频拍照和网络加载的flash头像编辑上传插件，可缩放、裁剪、旋转、定位和调色等...。
+            |                         
+            .alert.alert-info
+              | 官网：
+              a(href="http://www.fullavatareditor.com/", target="_blank") http://www.fullavatareditor.com/
+            |                         
+            p
+              span.label.label-warning 注意：这是一款商业插件，如果需要，请在获得许可后使用！
+
+
+
