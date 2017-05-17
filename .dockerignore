@@ -1,0 +1,5 @@
+node-workbench/node_modules
+node-workbench/public/components
+node-workbench/npm-debug.log
+node-workbench/.gitignore
+node-workbench/.editorconfig
