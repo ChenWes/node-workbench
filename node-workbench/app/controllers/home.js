@@ -8,6 +8,18 @@ module.exports = function (app) {
 };
 
 router.get('/', function (req, res, next) {
+  var articleEntity = new Article({
+    title: 'wes',
+    url: 'http://192.168.99.100:3000',
+    text: 'test data',
+    created: new Date(),
+    updated: new Date()
+  });
+
+  //save record
+  articleEntity.save(function (err, newPost) {
+    if (err) return next(err);
+  });
   res.render('index', {
     title: 'Nodejs Workbench'
   });
