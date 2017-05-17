@@ -10,7 +10,7 @@ var config = {
       name: 'node-workbench'
     },
     port: process.env.PORT || projectPort,
-    db: 'mongodb://localhost/node-workbench-dev'
+    db: 'mongodb://120.77.159.89:27018/node-workbench-dev'
   },
 
   test: {
@@ -19,7 +19,7 @@ var config = {
       name: 'node-workbench'
     },
     port: process.env.PORT || projectPort,
-    db: 'mongodb://localhost/node-workbench-sit'
+    db: 'mongodb://120.77.159.89:27018/node-workbench-test'
   },
 
   production: {
@@ -28,7 +28,7 @@ var config = {
       name: 'node-workbench'
     },
     port: process.env.PORT || projectPort,
-    db: 'mongodb://localhost/node-workbench'
+    db: 'mongodb://120.77.159.89:27018/node-workbench'
   }
 };
 
