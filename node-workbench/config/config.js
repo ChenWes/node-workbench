@@ -1,7 +1,7 @@
 var path = require('path'),
   rootPath = path.normalize(__dirname + '/..'),
   env = process.env.NODE_ENV || 'development',
-  projectPort = 3002;
+  projectPort = 3000;
 
 var config = {
   development: {
