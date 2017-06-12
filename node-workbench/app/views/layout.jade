@@ -4,7 +4,10 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(name="renderer", content="webkit")
+
+    //- ico
     link(rel="shortcut icon", href="favicon.ico")
+
     title= title
 
     //- common css
@@ -52,7 +55,15 @@ html(lang='en')
                     li
                       a(href="login.html") 安全退出
                 .logo-element
-                  | Toyo
+                  | Workbench
+              li
+                a(href="#")
+                  i.fa.fa-flag
+                  span.nav-label 系统管理
+                  span.fa.arrow
+                ul.nav.nav-second-level.collapse
+                  li
+                    a.J_menuItem(href="/home", data-index="0") 菜单管理
               li
                 a(href="#")
                   i.fa.fa-home
@@ -363,11 +374,11 @@ html(lang='en')
     <script src="/js/plugins/layer/layer.min.js"></script>
 
     //- 自定义js
-    <script src="js/hplus.js?v=4.1.0"></script>
-    <script type="text/javascript" src="js/contabs.js"></script>
+    <script src="/js/hplus.js?v=4.1.0"></script>
+    <script src="/js/contabs.js"></script>
 
     //- 第三方插件
-    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="/js/plugins/pace/pace.min.js"></script>
 
     if ENV_DEVELOPMENT
       script(src='http://localhost:35729/livereload.js')  
